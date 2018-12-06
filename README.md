@@ -65,4 +65,5 @@ $ vim /etc/nginx/nginx.conf
 
 ## nginxあげとく
 $ service nginx start
+
 $ chkconfig nginx on
