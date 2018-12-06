@@ -70,3 +70,6 @@ $ vim /etc/nginx/nginx.conf
 $ service nginx start
 $ chkconfig nginx on
 ```
+
+## api叩いてみる
+http://${globalip}/keywords
