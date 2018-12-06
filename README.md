@@ -5,11 +5,11 @@
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 
 ## Node.jsのLTSバージョンをインストールする（ここはお好みで）
-$ nvm install v4.4.4
+$ nvm install stable
 
 ## インストールしたNode.jsの設定 + デフォルトver.として指定する
-$ nvm use 4.4.4
-$ nvm alias default 4.4.4
+$ nvm use stable
+$ nvm alias default stable
 
 ## インストールされたNode.jsのver.を確認する
 $ node -v
