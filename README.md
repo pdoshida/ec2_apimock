@@ -1,22 +1,23 @@
 # ec2(amazonlinux)でapiモックを作る
-
-
-### nvmをインストールする
-```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash```
-
 ```
-### Node.jsのインストール
+# nvmをインストールする
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+```
+```
+# Node.jsのインストール
 nvm install stable
 nvm use stable
 nvm alias default stable
 node -v
 ```
-
-## json-serverのインストール
-```npm install -g json-server```
-
-## db.json作成
-$ vim db.json
+```
+# json-serverのインストール
+npm install -g json-server
+```
+```
+# db.json作成
+vim db.json
+```
 ```
 {
   "users": [],
@@ -37,15 +38,18 @@ $ vim db.json
   "articles": []
 }
 ```
-
-### json-server起動(お試し)
-$ json-server db.json
-
-### nginxのインストール
-$ yum install -y nginx
-
-## nginxの設定を一部修正
-$ vim /etc/nginx/nginx.conf
+```
+# json-server起動(お試し)
+json-server db.json
+```
+```
+# nginxのインストール
+yum install -y nginx
+```
+```
+# nginxの設定を一部修正
+vim /etc/nginx/nginx.conf
+```
 ```
     server {
         listen       80 default_server;
@@ -60,12 +64,12 @@ $ vim /etc/nginx/nginx.conf
             proxy_pass http://localhost:3000;　　　　　　　　　　　　　#追加箇所
         }
 ```
-
-## nginxあげとく
 ```
-$ service nginx start
-$ chkconfig nginx on
+# nginxあげとく
+service nginx start
+chkconfig nginx on
 ```
-
-## api叩いてみる
+```
+# api叩いてみる
 http://${globalip}/keywords
+```
