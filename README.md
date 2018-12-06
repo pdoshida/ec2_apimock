@@ -73,3 +73,6 @@ chkconfig nginx on
 # api叩いてみる
 http://${globalip}/keywords
 ```
+
+参考(api叩き方とか)
+https://github.com/typicode/json-server
