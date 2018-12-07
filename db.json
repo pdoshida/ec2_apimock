@@ -1,0 +1,18 @@
+{
+  "users": [],
+  "keywords": [
+    {
+      "id": 1,
+      "text": "hoge"
+    },
+    {
+      "id": 2,
+      "text": "fuga"
+    },
+    {
+      "id": 3,
+      "text": "piyo"
+    }
+  ],
+  "articles": []
+}
