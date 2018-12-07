@@ -15,30 +15,6 @@ node -v
 npm install -g json-server
 ```
 ```
-# db.json作成
-vim db.json
-```
-```
-{
-  "users": [],
-  "keywords": [
-    {
-      "id": 1,
-      "text": "hoge"
-    },
-    {
-      "id": 2,
-      "text": "fuga"
-    },
-    {
-      "id": 3,
-      "text": "piyo"
-    }
-  ],
-  "articles": []
-}
-```
-```
 # json-server起動(お試し)
 json-server db.json
 ```
