@@ -54,7 +54,7 @@ vim /etc/nginx/nginx.conf
     server {
         listen       80 default_server;
         listen       [::]:80 default_server;
-        server_name  52.193.75.127;                #修正箇所
+        server_name  xxx.xxx.xxx.xxx;                #修正箇所（globalip）
         root         /usr/share/nginx/html;
 
         # Load configuration files for the default server block.
