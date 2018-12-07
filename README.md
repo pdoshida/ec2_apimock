@@ -2,27 +2,18 @@
 ```
 # nvmをインストールする
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
-```
-```
+
 # Node.jsのインストール
 nvm install stable
 nvm use stable
 nvm alias default stable
 node -v
-```
-```
 # json-serverのインストール
 npm install -g json-server
-```
-```
-# json-server起動(お試し)
-json-server db.json
-```
-```
+
 # nginxのインストール
 yum install -y nginx
-```
-```
+
 # nginxの設定を一部修正
 vim /etc/nginx/nginx.conf
 ```
@@ -44,8 +35,7 @@ vim /etc/nginx/nginx.conf
 # nginxあげとく
 service nginx start
 chkconfig nginx on
-```
-```
+
 # api叩いてみる
 http://${globalip}/keywords
 ```
