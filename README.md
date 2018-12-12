@@ -3,6 +3,8 @@
 # nvmをインストールする
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 
+source .bashrc
+
 # Node.jsのインストール
 nvm install stable
 nvm use stable
