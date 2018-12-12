@@ -10,6 +10,7 @@ nvm install stable
 nvm use stable
 nvm alias default stable
 node -v
+
 # json-serverのインストール
 npm install -g json-server
 
